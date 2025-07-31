@@ -1,0 +1,39 @@
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #f2b705;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
